@@ -1,0 +1,35 @@
+COMANDOS PARA EJECUTAR EL PROYECTO
+
+1) Entrar a la carpeta del proyecto:
+cd "ENTREGA2-Arzamendia- Navega las rutas-Tienda Cool-REACT-JS"
+
+2) Instalar dependencias:
+npm install
+
+3) Instalar React Router, si hiciera falta:
+npm install react-router-dom
+
+4) Ejecutar la página:
+npm run dev
+
+5) Abrir en el navegador:
+http://localhost:5173/
+
+
+COMANDOS PARA GUARDAR Y SUBIR A GITHUB
+
+git status
+git add .
+git commit -m "Entrega 2 Navega las rutas"
+git branch -M main
+git remote set-url origin https://github.com/IvannaAr94/ENTREGA2-Arzamendia-Navega-las-rutas-Tienda-Cool-REACT-JS.git
+git push -u origin main
+
+
+IMPORTANTE PARA CAMBIAR EL NOMBRE DEL REPOSITORIO EN GITHUB
+
+Entrar al repo en GitHub > Settings > General > Repository name.
+Cambiar el nombre a:
+ENTREGA2-Arzamendia-Navega-las-rutas-Tienda-Cool-REACT-JS
+
+Después usar el comando git remote set-url origin que está arriba.
