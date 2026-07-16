@@ -1,9 +1,10 @@
 // Punto de entrada de React. BrowserRouter habilita la navegación por rutas.
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
-import './styles.css'
+import './styles/styles.css'
 import { CartProvider } from './context/CartContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

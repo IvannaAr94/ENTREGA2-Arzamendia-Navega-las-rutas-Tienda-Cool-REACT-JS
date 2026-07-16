@@ -1,72 +1,72 @@
-# ENTREGA2-Arzamendia- Navega las rutas-Tienda Cool-REACT-JS
+# Tienda Cool - Proyecto Final React JS
 
-Entrega 2 de React JS: **Navega las rutas**.
+**Alumna:** Ivanna Arzamendia
 
-Proyecto de e-commerce llamado **Tienda Cool**, creado con React, Vite y React Router DOM.
+Aplicación web de e-commerce desarrollada con React JS para el Proyecto Final del curso de React JS de Coderhouse.
 
-## Objetivo
+La aplicación permite navegar por un catálogo de indumentaria, filtrar productos por categoría, consultar el detalle de cada producto, seleccionar cantidades, agregar productos al carrito y finalizar una compra generando una orden en Firebase Firestore.
 
-Implementar la navegación entre las distintas vistas de la tienda: catálogo principal, catálogo filtrado por categorías y detalle de cada producto.
+## Funcionalidades
 
-## Funcionalidades realizadas
+- Catálogo dinámico de productos.
+- Filtrado por categorías: Mujer, Hombre y Niños.
+- Navegación mediante React Router.
+- Vista individual del detalle de cada producto.
+- Contador de unidades con validación de stock.
+- Carrito de compras administrado mediante Context.
+- Visualización de cantidades, subtotales y total.
+- Eliminación individual de productos.
+- Opción para vaciar el carrito.
+- Formulario de checkout con validaciones.
+- Registro de órdenes de compra en Firebase Firestore.
+- Visualización del ID de la orden generada.
+- Mensajes de carga, carrito vacío y productos no encontrados.
+- Diseño responsive.
 
-- Navegación con **React Router DOM**.
-- Ruta principal `/` con el catálogo completo.
-- Ruta dinámica `/category/:categoryId` para filtrar por categoría.
-- Ruta dinámica `/item/:itemId` para ver el detalle de un producto.
-- Ruta `*` para mostrar una página de error 404.
-- Uso de `useParams()` para leer los parámetros de la URL.
-- Uso de `useEffect()` con dependencias para actualizar la vista al navegar.
-- Simulación de llamados asíncronos con **Promises** y `setTimeout`.
-- Listado de productos con `Array.map()` y prop `key`.
-- Separación entre componentes contenedores y componentes de presentación.
-- Componente `ItemCount` incluido en el detalle del producto.
+## Tecnologías utilizadas
 
-## Componentes principales
-
-- `NavBar.jsx`: barra de navegación con enlaces por categoría y carrito.
-- `CartWidget.jsx`: widget visual del carrito.
-- `ItemListContainer.jsx`: contenedor que obtiene y filtra productos.
-- `ItemList.jsx`: componente de presentación que lista productos.
-- `Item.jsx`: tarjeta visual de cada producto.
-- `ItemDetailContainer.jsx`: contenedor que obtiene el detalle de un producto.
-- `ItemDetail.jsx`: vista visual del detalle del producto.
-- `ItemCount.jsx`: contador de unidades.
-- `NotFound.jsx`: página 404.
+- React JS
+- Vite
+- React Router DOM
+- Firebase
+- Firestore
+- JavaScript
+- CSS
 
 ## Estructura principal
 
-```txt
-src/
-├── assets/
-│   └── productos/
-├── components/
-│   ├── CartWidget.jsx
-│   ├── Item.jsx
-│   ├── ItemCount.jsx
-│   ├── ItemDetail.jsx
-│   ├── ItemDetailContainer.jsx
-│   ├── ItemList.jsx
-│   ├── ItemListContainer.jsx
-│   ├── NavBar.jsx
-│   └── NotFound.jsx
-├── data/
-│   └── products.js
-├── services/
-│   └── productsService.js
+```text
+src
+├── components
+├── context
+├── data
+├── services
 ├── App.jsx
 ├── main.jsx
 └── styles.css
 ```
 
-## Instalar dependencias
+## Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone URL_DEL_REPOSITORIO
+```
+
+Ingresar a la carpeta:
+
+```bash
+cd NOMBRE_DEL_PROYECTO
+```
+
+Instalar dependencias:
 
 ```bash
 npm install
-npm install react-router-dom
 ```
 
-## Ejecutar el proyecto
+Ejecutar la aplicación:
 
 ```bash
 npm run dev
@@ -78,17 +78,25 @@ Después abrí en el navegador la URL que muestre la terminal, normalmente:
 http://localhost:5173/
 ```
 
-## Comandos para guardar y subir a GitHub
+## Firebase
 
-```bash
-git status
-git add .
-git commit -m "Entrega 2 Navega las rutas"
-git branch -M main
-git remote set-url origin https://github.com/IvannaAr94/ENTREGA2-Arzamendia-Navega-las-rutas-Tienda-Cool-REACT-JS.git
-git push -u origin main
-```
+La aplicación utiliza Firebase Firestore como base de datos.
+
+Colecciones utilizadas:
+
+- products
+- orders
+
+## Variables de entorno
+
+El archivo `.env` contiene las credenciales privadas de Firebase y no se incluye en el repositorio.
+
+El archivo `.env.example` muestra la estructura necesaria para configurar el proyecto.
 
 ## Repositorio
 
-https://github.com/IvannaAr94/ENTREGA2-Arzamendia-Navega-las-rutas-Tienda-Cool-REACT-JS
+[Proyecto Final - Tienda Cool React JS](https://github.com/IvannaAr94/TRABAJO-FINAL-Arzamendia-Tienda-Cool-REACT-JS)
+
+## Vista previa
+
+![Tienda Cool](./public/productos/TiendaCool-png.png)

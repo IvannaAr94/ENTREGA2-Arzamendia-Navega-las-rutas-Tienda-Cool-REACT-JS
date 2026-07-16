@@ -13,10 +13,34 @@ function NavBar() {
         </Link>
 
         <ul className="nav-links">
-          <li><NavLink to="/">Inicio</NavLink></li>
-          <li><NavLink to="/category/mujer">Mujer</NavLink></li>
-          <li><NavLink to="/category/hombre">Hombre</NavLink></li>
-          <li><NavLink to="/category/ninos">Niños</NavLink></li> 
+          <nav className="nav-links">
+
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              Inicio
+            </NavLink>
+
+            <NavLink to="/category/mujer" className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'}>Mujer
+            </NavLink>
+
+            <NavLink to="/category/hombre" className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'}>Hombre
+            </NavLink>
+
+            <NavLink to="/category/ninos" className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'}>Niños
+            </NavLink>
+
+            <NavLink to="/sobre-nosotros" className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'} >Sobre Nosotros
+            </NavLink>
+
+          </nav>
         </ul>
 
         <CartWidget />
